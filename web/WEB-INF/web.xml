@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee                              http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <!-- LoginServlet -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <!-- EmployeeDetail JSP -->
+    <servlet>
+        <servlet-name>EmployeeDetail</servlet-name>
+        <jsp-file>/employeeDetail.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EmployeeDetail</servlet-name>
+        <url-pattern>/EmployeeDetail</url-pattern>
+    </servlet-mapping>
+    <!-- AddEmployee servlet -->
+    <!-- ViewEmployee servlet (serves the view form) -->
+    <servlet>
+        <servlet-name>ViewEmployee</servlet-name>
+        <servlet-class>ViewEmployee</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewEmployee</servlet-name>
+        <url-pattern>/ViewEmployee</url-pattern>
+    </servlet-mapping>
+    <!-- SearchEmployee servlet (processes the view form POST) -->
+    <servlet>
+        <servlet-name>SearchEmployee</servlet-name>
+        <servlet-class>SearchEmployee</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchEmployee</servlet-name>
+        <url-pattern>/SearchEmployee</url-pattern>
+    </servlet-mapping>
+    <!-- UpdateEmployee servlet -->
+    <servlet>
+        <servlet-name>UpdateEmployee</servlet-name>
+        <servlet-class>UpdateEmployee</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateEmployee</servlet-name>
+        <url-pattern>/UpdateEmployee</url-pattern>
+    </servlet-mapping>
+    <!-- RemoveEmployee servlet -->
+    <servlet>
+        <servlet-name>RemoveEmployee</servlet-name>
+        <servlet-class>RemoveEmployee</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RemoveEmployee</servlet-name>
+        <url-pattern>/RemoveEmployee</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SubmitAttendance</servlet-name>
+        <servlet-class>SubmitAttendance</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubmitAttendance</servlet-name>
+        <url-pattern>/SubmitAttendance</url-pattern>
+    </servlet-mapping>
+   
+    <!-- Default welcome page -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>

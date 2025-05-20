@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome</title>
+  <style>
+    /* Full-window background */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url("employee.jpg") no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    /* Sliding title */
+    .sliding-title {
+      position: absolute;
+      top: 20px;            /* distance from top edge */
+      left: 0;
+      right: 0;
+      font-size: 2em;
+      font-weight: bold;
+      white-space: nowrap;
+      
+      animation: slide 8s linear infinite;
+      text-align: center;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+      color: #fff;
+    }
+
+    @keyframes slide {
+      from { transform: translateX(-100%); }
+      to   { transform: translateX(100%); }
+    }
+
+    /* Centered button */
+    .btn-login {
+      padding: 15px 30px;
+      font-size: 1em;
+      color: #fff;
+      background-color: rgba(66, 133, 244, 0.9);
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn-login:hover {
+      background-color: rgba(57, 120, 218, 0.9);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sliding-title">Welcome to Employee Management System</div>
+
+  <a href="loginform.html" class="btn-login">Click here to Login</a>
+
+</body>
+</html>
